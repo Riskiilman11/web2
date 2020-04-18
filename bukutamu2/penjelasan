@@ -1,0 +1,14 @@
+// fopen digunakan untuk membuka file. Mengembalikan pointer ke file yang dibuka
+$fp = fopen($file,"r");
+
+if ($fp)
+{
+    // fgets digunakan untuk membaca file baris demi baris
+    $baca = fgets($fp,50);
+
+    // print untuk menampilkan isi dari $baca
+    print ("$baca");
+}
+
+// fclose digunakan untuk membuka file tertutup
+fclose($fp);
